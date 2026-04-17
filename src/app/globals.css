@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+ :root {
+  --background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+  --foreground: #111827;
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --secondary: #6366f1;
+  --accent: #f59e42;
+  --danger: #ef4444;
+  --success: #22c55e;
+  --black: #0a0a0a;
+  --white: #fff;
+  --card-bg: #fff;
+  --card-shadow: 0 4px 24px 0 rgba(30,41,59,0.08);
+  --border-radius: 1.25rem;
+  --font-sans: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: var(--white);
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px 0 rgba(37,99,235,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+  letter-spacing: 0.02em;
+}
+.btn-primary:hover {
+  background: linear-gradient(90deg, var(--secondary), var(--primary-dark));
+  box-shadow: 0 4px 16px 0 rgba(99,102,241,0.12);
+}
+
+.btn-black {
+  background: var(--black);
+  color: var(--white);
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.btn-black:hover {
+  background: #222;
+}
+
+.btn-danger {
+  background: var(--danger);
+  color: var(--white);
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.btn-danger:hover {
+  background: #b91c1c;
+}
+
+.btn-white {
+  background: var(--white);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-white:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+
+.input {
+  border-radius: 0.5rem;
+  border: 1.5px solid #cbd5e1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background: #f8fafc;
+  color: var(--foreground);
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px #2563eb33;
+  outline: none;
+}
+
+.input-error {
+  border-color: var(--danger);
+  background: #fef2f2;
+}
+.input-success {
+  border-color: var(--success);
+  background: #f0fdf4;
+}
+
+.table {
+  background: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px 0 rgba(30,41,59,0.06);
+  overflow: hidden;
+}
+.table th, .table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+.table th {
+  background: #e0e7ff;
+  color: var(--primary-dark);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.alert-error {
+  background: #fef2f2;
+  color: var(--danger);
+  border: 1.5px solid var(--danger);
+  border-radius: 0.75rem;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+.alert-success {
+  background: #f0fdf4;
+  color: var(--success);
+  border: 1.5px solid var(--success);
+  border-radius: 0.75rem;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+.alert-info {
+  background: #eff6ff;
+  color: var(--primary-dark);
+  border: 1.5px solid var(--primary);
+  border-radius: 0.75rem;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  font-weight: 500;
+}
