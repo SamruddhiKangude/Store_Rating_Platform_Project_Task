@@ -1,7 +1,18 @@
 # 📌 Store Rating Platform
 
 ---
+## ⚠️ Admin First Login Note
 
+> **NOTE:** The main admin account is seeded by default.
+> 
+> **Seed user:** `admin@storerating.com`  
+> **Password:** `Admin@123`
+> 
+> **For security reasons, please update your password upon your first login as an admin.**
+
+## Note: The Store Owner User ID must be copied from the user list below and entered in the "Add Store" form for the user you want to assign as the store owner.
+
+---
 ## 🚀 Quick Start: How to Run This Project
 
 1. **Download the Repository**
