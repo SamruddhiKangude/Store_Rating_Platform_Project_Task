@@ -1,4 +1,4 @@
-﻿# 📌 Store Rating Platform
+# 📌 Store Rating Platform
 
 ---
 
@@ -43,6 +43,8 @@
      mysql -u root -p
      # Enter password: root (or your MySQL root password) 
      # Dtabase name must be ( abc )
+
+     DROP DATABASE abc; # if (Can't create database 'abc'; if database is already exists)
      CREATE DATABASE abc;
      SHOW DATABASES;
      EXIT;
