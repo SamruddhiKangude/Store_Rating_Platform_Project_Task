@@ -84,9 +84,10 @@ This project uses **Next.js** for the frontend and a custom **Express.js** API f
 
 ### Tech Stack
 
-● Backend: Any one of backend framework from this ExpressJs 
-● Database: MySQL  
 ● Frontend: ReactJs
+● Backend: ExpressJs 
+● Database: MySQL  
+
 
 ### Requirements
 
@@ -166,9 +167,10 @@ Normal users should be able to sign up on the platform through a registration pa
 
 ## Tech Stack
 
-- **Frontend**: Next.js (React 19), TailwindCSS
-- **Backend API**: Express.js
-- **Database**: MySQL (using `mysql2` driver)
+● Frontend: ReactJs
+● Backend: ExpressJs 
+● Database: MySQL  
+
 - **Running tools**: `concurrently` (runs frontend and backend together)
 
 ---
